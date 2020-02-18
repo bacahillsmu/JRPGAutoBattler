@@ -1,0 +1,189 @@
+<root id="units">
+
+	<!-- Knight -->
+	<unit type = "Knight"
+		health = "1"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		texture = "Data/Sprites/Knight.png">
+
+		<animset>
+			<!-- Sprite Animations? -->
+			<main_texture texture_name = "auto_attack" texture = "Data/Sprites/Knight.png"/>
+		</animset>
+
+		<abilities>
+			<main>
+				<main_ability ability_name = "auto_attack"/>
+			</main>
+
+			<reaction>
+				<reaction_ability ability_name = "block"/>
+			</reaction>
+
+			<passive>
+				<passive_ability ability_name = "armor"/>
+			</passive>
+		</abilities>
+
+	</unit>
+
+	<!-- Blackmage -->
+	<unit type = "Blackmage"
+		health = "1"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		texture = "Data/Sprites/Blackmage.png">
+
+		<animset>
+			<!-- Sprite Animations? -->
+			<main_texture texture_name = "auto_attack" texture = "Data/Sprites/Blackmage.png"/>
+		</animset>
+
+		<abilities>
+			<main>
+				<main_ability ability_name = "auto_attack"/>
+			</main>
+
+			<reaction>
+				<reaction_ability ability_name = "block"/>
+			</reaction>
+
+			<passive>
+				<passive_ability ability_name = "armor"/>
+			</passive>
+		</abilities>
+
+	</unit>
+
+	<!-- Archer -->
+	<unit type = "Archer"
+		health = "1"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		texture = "Data/Sprites/Archer.png">
+
+		<animset>
+			<!-- Sprite Animations? -->
+			<main_texture texture_name = "auto_attack" texture = "Data/Sprites/Archer.png"/>
+		</animset>
+
+		<abilities>
+			<main>
+				<main_ability ability_name = "auto_attack"/>
+			</main>
+
+			<reaction>
+				<reaction_ability ability_name = "block"/>
+			</reaction>
+
+			<passive>
+				<passive_ability ability_name = "armor"/>
+			</passive>
+		</abilities>
+
+	</unit>
+
+	<!-- Dragoon -->
+	<unit type = "Dragoon"
+		health = "1"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		texture = "Data/Sprites/Dragoon.png">
+
+		<animset>
+			<!-- Sprite Animations? -->
+			<main_texture texture_name = "auto_attack" texture = "Data/Sprites/Dragoon.png"/>
+		</animset>
+
+		<abilities>
+			<main>
+				<main_ability ability_name = "auto_attack"/>
+			</main>
+
+			<reaction>
+				<reaction_ability ability_name = "block"/>
+			</reaction>
+
+			<passive>
+				<passive_ability ability_name = "armor"/>
+			</passive>
+		</abilities>
+
+	</unit>
+
+
+	<!-- Morpher -->
+	<unit type = "Morpher"
+		health = "1"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		texture = "Data/Sprites/Morpher.png">
+
+		<animset>
+			<!-- Sprite Animations? -->
+			<main_texture texture_name = "auto_attack" texture = "Data/Sprites/Morpher.png"/>
+		</animset>
+
+		<abilities>
+			<main>
+				<main_ability ability_name = "auto_attack"/>
+			</main>
+
+			<reaction>
+				<reaction_ability ability_name = "block"/>
+			</reaction>
+
+			<passive>
+				<passive_ability ability_name = "armor"/>
+			</passive>
+		</abilities>
+
+	</unit>
+
+	<!-- Summoner -->
+	<unit type = "Summoner"
+		health = "1"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		texture = "Data/Sprites/Summoner.png">
+
+		<animset>
+			<!-- Sprite Animations? -->
+			<main_texture texture_name = "auto_attack" texture = "Data/Sprites/Summoner.png"/>
+		</animset>
+
+		<abilities>
+			<main>
+				<main_ability ability_name = "auto_attack"/>
+			</main>
+
+			<reaction>
+				<reaction_ability ability_name = "block"/>
+			</reaction>
+
+			<passive>
+				<passive_ability ability_name = "armor"/>
+			</passive>
+		</abilities>
+
+	</unit>
+</root>

@@ -1,0 +1,21 @@
+<root id="abilities">
+
+	<ability name = "auto_attack"
+		type = "main"
+		units = "Knight"
+		unlock_level = "1">
+	</ability>
+
+	<ability name = "block"
+		type = "reaction"
+		units = "Knight"
+		unlock_level = "1">
+	</ability>
+
+	<ability name = "armor"
+		type = "passive"
+		units = "Knight"
+		unlock_level = "1">
+	</ability>
+
+</root>
