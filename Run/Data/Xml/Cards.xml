@@ -65,7 +65,7 @@
 		cardTexture = "Data/Sprites/CardBorder.png"
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
-
+<!-- 
 	<card type = "Soldier"
 		health = "0"
 		strength = "1"
@@ -373,4 +373,5 @@
 		cardTexture = "Data/Sprites/CardBorder.png"
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
+	-->
 </root>
