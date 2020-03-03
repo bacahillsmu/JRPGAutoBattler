@@ -3,10 +3,10 @@
 	<!-- Knight -->
 	<unit type = "Knight"
 		health = "10"
-		strength = "5"
+		strength = "2"
 		intellect = "1"
 		wisdom = "1"
-		consitution = "1"
+		consitution = "2"
 		speed = "1"
 		texture = "Data/Sprites/Knight.png">
 
@@ -34,10 +34,10 @@
 	<!-- Blackmage -->
 	<unit type = "Blackmage"
 		health = "5"
-		strength = "1"
+		strength = "5"
 		intellect = "1"
 		wisdom = "1"
-		consitution = "1"
+		consitution = "0"
 		speed = "1"
 		texture = "Data/Sprites/Blackmage.png">
 
@@ -68,7 +68,7 @@
 		strength = "5"
 		intellect = "1"
 		wisdom = "1"
-		consitution = "1"
+		consitution = "0"
 		speed = "1"
 		texture = "Data/Sprites/Archer.png">
 
@@ -96,10 +96,10 @@
 	<!-- Dragoon -->
 	<unit type = "Dragoon"
 		health = "10"
-		strength = "5"
+		strength = "3"
 		intellect = "1"
 		wisdom = "1"
-		consitution = "1"
+		consitution = "0"
 		speed = "1"
 		texture = "Data/Sprites/Dragoon.png">
 
@@ -128,10 +128,10 @@
 	<!-- Morpher -->
 	<unit type = "Morpher"
 		health = "5"
-		strength = "1"
+		strength = "5"
 		intellect = "1"
 		wisdom = "1"
-		consitution = "1"
+		consitution = "0"
 		speed = "1"
 		texture = "Data/Sprites/Morpher.png">
 
@@ -159,10 +159,10 @@
 	<!-- Summoner -->
 	<unit type = "Summoner"
 		health = "5"
-		strength = "1"
+		strength = "5"
 		intellect = "1"
 		wisdom = "1"
-		consitution = "1"
+		consitution = "0"
 		speed = "1"
 		texture = "Data/Sprites/Summoner.png">
 
