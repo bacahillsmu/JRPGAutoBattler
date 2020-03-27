@@ -1,6 +1,6 @@
 <root id="cards">
 
-	<card type = "Knight"
+	<card type = "Blackmage"
 		health = "0"
 		strength = "1"
 		intellect = "1"
@@ -11,7 +11,7 @@
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
 
-	<card type = "Blackmage"
+	<card type = "Whitemage"
 		health = "0"
 		strength = "1"
 		intellect = "1"
@@ -55,6 +55,29 @@
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
 
+	<card type = "Warrior"
+		health = "0"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		cardTexture = "Data/Sprites/CardBorder.png"
+		jobTexture = "Data/Sprites/JobIcons.png">
+	</card>
+
+
+	<card type = "Knight"
+		health = "0"
+		strength = "1"
+		intellect = "1"
+		wisdom = "1"
+		consitution = "1"
+		speed = "1"
+		cardTexture = "Data/Sprites/CardBorder.png"
+		jobTexture = "Data/Sprites/JobIcons.png">
+	</card>
+	
 <!--
 	<card type = "Morpher"
 		health = "0"
@@ -66,7 +89,7 @@
 		cardTexture = "Data/Sprites/CardBorder.png"
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
--->
+
 	<card type = "Summoner"
 		health = "0"
 		strength = "1"
@@ -77,8 +100,7 @@
 		cardTexture = "Data/Sprites/CardBorder.png"
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
-
-<!-- 
+ 
 	<card type = "Soldier"
 		health = "0"
 		strength = "1"
@@ -124,18 +146,7 @@
 		cardTexture = "Data/Sprites/CardBorder.png"
 		jobTexture = "Data/Sprites/JobIcons.png">
 	</card>
--->
-	<card type = "Whitemage"
-		health = "0"
-		strength = "1"
-		intellect = "1"
-		wisdom = "1"
-		consitution = "1"
-		speed = "1"
-		cardTexture = "Data/Sprites/CardBorder.png"
-		jobTexture = "Data/Sprites/JobIcons.png">
-	</card>
-<!--
+
 	<card type = "Illusionist"
 		health = "0"
 		strength = "1"
@@ -159,17 +170,6 @@
 	</card>
 
 	<card type = "Hunter"
-		health = "0"
-		strength = "1"
-		intellect = "1"
-		wisdom = "1"
-		consitution = "1"
-		speed = "1"
-		cardTexture = "Data/Sprites/CardBorder.png"
-		jobTexture = "Data/Sprites/JobIcons.png">
-	</card>
-
-	<card type = "Warrior"
 		health = "0"
 		strength = "1"
 		intellect = "1"

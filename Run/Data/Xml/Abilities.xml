@@ -1,61 +1,156 @@
-<root id="abilities">
+<root id = "abilities">
 
+	<!-- =================================================================== -->
+	<!-- Main Abilities -->
+	<!-- Fire -->
 	<ability name = "Fire"
-		class = "magic"
-		base_damage = "7"
-		unlock_level = "1"
-		target_choice = "random"
-		target_alliance = "enemy">
+			 class = "magic"
+			 base_damage = "7"
+			 unlock_level = "1"
+			 target_choice = "random"
+			 target_alliance = "enemy">
 
-		<sequset>
-			<sequence type = "anim" atTime = "0.0" animstate = "Conjure"/>
-			<sequence type = "anim" atTime = "1.0" animstate = "Cast"/>
-			<sequence type = "effect" atTime = "1.0" duration = "2.0" texture = "Data/Sprites/Abilities/Fire.png" dimensions = "2.0, 4.0" render = "true" do_damage = "true">
+		<sequence>
+			<term atTime = "0.00" duration = "0.00" type = "anim" animname = "Conjure"/>
+			<term atTime = "1.00" duration = "0.00" type = "anim" animname = "Cast"/>
+			<term atTime = "1.00" duration = "2.00" type = "effect" texture = "Data/Sprites/Abilities/Fire.png" dimensions = "2.0, 4.0">
 				<animation ability_name = "Fire" start = "0" end = "1" duration = "0.25" playback = "loop"/>
-			</sequence>
-			<sequence type = "audio" atTime = "1.0" audio = "Data/Audio/FF/Fire.wav"/>
-			<sequence type = "anim" atTime = "3.0" animstate = "Idle"/>
-		</sequset>
-
-		
+			</term>
+			<term atTime = "1.00" duration = "0.00" type = "audio" audio = "Data/Audio/FF/Fire.wav"/>
+			<term atTime = "3.00" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<!--<term atTime = "3.00" duration = "0.00" type = "debuff" name = "Burn" chance = "0.8"/>-->
+			<term atTime = "3.00" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
 	</ability>
 
+	<!-- Cure -->
 	<ability name = "Cure"
-		class = "magic"
-		base_damage = "2" 
-		unlock_level = "1"
-		target_choice = "most_damage_taken"
-		target_alliance = "friendly">
-		<!-- NOTE: base_damage is still used as the value for how much it heals -->
+			 class = "magic"
+			 base_damage = "3" 
+			 unlock_level = "1"
+			 target_choice = "most_damage_taken"
+			 target_alliance = "friendly">
 
-		<sequset>
-			<sequence type = "anim" atTime = "0.0" animstate = "Conjure"/>
-			<sequence type = "anim" atTime = "1.0" animstate = "Cast"/>
-			<sequence type = "effect" atTime = "1.0" duration = "2.0" texture = "Data/Sprites/Abilities/Cure.png" dimensions = "2.0, 4.0" render = "true" do_damage = "true">
+		<sequence>
+			<term atTime = "0.0" duration = "0.00" type = "anim" animname = "Conjure"/>
+			<term atTime = "1.0" duration = "0.00" type = "anim" animname = "Cast"/>
+			<term atTime = "1.0" duration = "2.00" type = "effect" texture = "Data/Sprites/Abilities/Cure.png" dimensions = "2.0, 4.0">
 				<animation ability_name = "Cure" start = "0" end = "1" duration = "0.25" playback = "loop"/>
-			</sequence>
-			<sequence type = "audio" atTime = "1.0" audio = "Data/Audio/FF/Cure.wav"/>
-			<sequence type = "anim" atTime = "3.0" animstate = "Idle"/>
-		</sequset>
+			</term>
+			<term atTime = "3.0" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<term atTime = "1.0" duration = "0.00" type = "audio" audio = "Data/Audio/FF/Cure.wav"/>
+			<term atTime = "3.0" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
 	</ability>
 
+	<!-- Jump -->
 	<ability name = "Jump"
-		class = "physical"
-		base_damage = "7" 
-		unlock_level = "1"
-		target_choice = "random"
-		target_alliance = "enemy">
-
+			 class = "physical"
+			 base_damage = "7" 
+			 unlock_level = "1"
+			 target_choice = "random"
+			 target_alliance = "enemy">
 		
-		<sequset>
-			<sequence type = "anim" atTime = "0.0" animstate = "Jump"/>
-			<sequence type = "movement" atTime = "0.66" duration = "2.0" movement_type = "offscreen_top"/>
-			<sequence type = "movement" atTime = "3.0" duration = "0.05" movement_type = "target_x"/>
-			<sequence type = "anim" atTime = "3.1" animstate = "Fall"/>
-			<sequence type = "movement" atTime = "3.15" duration = "2.0" do_damage = "true" movement_type = "enemy_pos"/>
-			<sequence type = "anim" atTime = "5.2" animstate = "Jump"/>
-			<sequence type = "movement" atTime = "5.86" duration = "1.0" movement_type = "original_pos"/>
-			<sequence type = "anim" atTime = "6.86" animstate = "Idle"/>
-		</sequset>
+		<sequence>
+			<term atTime = "0.00" duration = "0.00" type = "anim" animname = "Jump"/>
+			<term atTime = "0.66" duration = "2.00" type = "movement" movement_type = "offscreen_top"/>
+			<term atTime = "3.00" duration = "0.05" type = "movement" movement_type = "target_x"/>
+			<term atTime = "3.10" duration = "0.00" type = "anim" animname = "Fall"/>
+			<term atTime = "3.15" duration = "2.00" type = "movement" movement_type = "enemy_pos"/>
+			<term atTime = "5.15" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<term atTime = "5.20" duration = "0.00" type = "anim" animname = "Jump"/>
+			<term atTime = "5.86" duration = "1.00" type = "movement" movement_type = "original_pos"/>
+			<term atTime = "6.86" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
 	</ability>
+
+	<!-- WarriorAttack -->
+	<ability name = "WarriorAttack"
+			 class = "physical"
+			 base_damage = "7" 
+			 unlock_level = "1"
+			 target_choice = "random"
+			 target_alliance = "enemy">
+		
+		<sequence>
+			<term atTime = "0.50" duration = "0.00" type = "anim" animname = "Attack"/>
+			<term atTime = "0.60" duration = "1.00" type = "effect" texture = "Data/Sprites/Effects/PhysicalHit.png" dimensions = "2.0, 4.0">
+				<animation ability_name = "PhysicalHit" start = "0" end = "3" duration = "0.4" playback = "loop"/>
+			</term>
+			<term atTime = "1.00" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<term atTime = "1.00" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
+	</ability>
+
+	<!-- KnightAttack -->
+	<ability name = "KnightAttack"
+			 class = "physical"
+			 base_damage = "7" 
+			 unlock_level = "1"
+			 target_choice = "random"
+			 target_alliance = "enemy">
+		
+		<sequence>
+			<term atTime = "0.50" duration = "0.00" type = "anim" animname = "Attack"/>
+			<term atTime = "0.60" duration = "1.00" type = "effect" texture = "Data/Sprites/Effects/PhysicalHit.png" dimensions = "2.0, 4.0">
+				<animation ability_name = "PhysicalHit" start = "0" end = "3" duration = "0.4" playback = "loop"/>
+			</term>
+			<term atTime = "1.00" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<term atTime = "1.00" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
+	</ability>
+
+	<!-- ArcherAttack -->
+	<ability name = "ArcherAttack"
+			 class = "physical"
+			 base_damage = "7" 
+			 unlock_level = "1"
+			 target_choice = "random"
+			 target_alliance = "enemy">
+		
+		<sequence>
+			<term atTime = "0.50" duration = "0.00" type = "anim" animname = "Attack"/>
+			<term atTime = "0.60" duration = "1.00" type = "effect" texture = "Data/Sprites/Effects/PhysicalHit.png" dimensions = "2.0, 4.0">
+				<animation ability_name = "PhysicalHit" start = "0" end = "3" duration = "0.4" playback = "loop"/>
+			</term>
+			<term atTime = "1.00" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<term atTime = "1.00" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
+	</ability>
+
+	<!-- PaladinAttack -->
+	<ability name = "PaladinAttack"
+			 class = "physical"
+			 base_damage = "7" 
+			 unlock_level = "1"
+			 target_choice = "random"
+			 target_alliance = "enemy">
+		
+		<sequence>
+			<term atTime = "0.50" duration = "0.00" type = "anim" animname = "Attack"/>
+			<term atTime = "0.60" duration = "1.00" type = "effect" texture = "Data/Sprites/Effects/PhysicalHit.png" dimensions = "2.0, 4.0">
+				<animation ability_name = "PhysicalHit" start = "0" end = "3" duration = "0.4" playback = "loop"/>
+			</term>
+			<term atTime = "1.00" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+			<term atTime = "1.00" duration = "0.00" type = "anim" animname = "Idle"/>
+		</sequence>
+	</ability>
+
+	<!-- =================================================================== -->
+	<!-- Buffs/Debuffs -->
+	<ability name = "Burn"
+			 class = "magic"
+			 base_damage = "2"
+			 activation_period = "on_target_turn"
+			 target_alliance = "enemy">
+
+		 <sequence>
+		 	<term atTime = "0.50" duration = "1.50" type = "effect" texture = "Data/Sprites/Abilities/Burn.png" dimensions = "2.0, 4.0">
+				<animation ability_name = "Burn" start = "0" end = "1" duration = "1.00" playback = "loop"/>
+			</term>
+			<!--<term atTime = "0.50" duration = "0.00" type = "audio" audio = "Data/Audio/FF/Fire.wav"/>-->
+		 	<term atTime = "0.50" duration = "0.00" type = "damage" damage_percentage = "1.0"/>
+		 </sequence>
+	</ability>
+
 </root>
