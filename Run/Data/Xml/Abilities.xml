@@ -165,8 +165,8 @@
 			 target_choice = "random">
 
 		 <sequence>
-		 	<term atTime = "0.00" duration = "1.00" type = "effect" texture = "Data/Sprites/BuffEffects/Shield.png" dimensions = "4.0, 4.0">
-				<animation ability_name = "Shield" start = "0" end = "5" duration = "1.00" playback = "loop"/>
+		 	<term atTime = "0.00" duration = "1.00" type = "effect" texture = "Data/Sprites/BuffEffects/ShieldProc.png" dimensions = "4.0, 4.0">
+				<animation ability_name = "ShieldProc" start = "0" end = "5" duration = "1.00" playback = "loop"/>
 			</term>
 			<term atTime = "1.00" duration = "0.0" type = "disspell"/>
 		 </sequence>

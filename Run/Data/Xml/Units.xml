@@ -2,7 +2,7 @@
 
 	<!-- Warrior -->
 	<unit type = "Warrior"
-		  health = "100"
+		  health = "25"
 		  mana = "1"
 		  strength = "2"
 		  intellect = "1"
@@ -37,7 +37,7 @@
 
 	<!-- Knight -->
 	<unit type = "Knight"
-		  health = "100"
+		  health = "25"
 		  mana = "1"
 		  strength = "2"
 		  intellect = "1"
@@ -72,7 +72,7 @@
 
 	<!-- Blackmage -->
 	<unit type = "Blackmage"
-		  health = "50"
+		  health = "10"
 		  mana = "5"
 		  strength = "1"
 		  intellect = "3"
@@ -109,7 +109,7 @@
 
 	<!-- Whitemage -->
 	<unit type = "Whitemage"
-		health = "50"
+		health = "25"
 		mana = "5"
 		strength = "5"
 		intellect = "2"
@@ -146,9 +146,9 @@
 
 	<!-- Archer -->
 	<unit type = "Archer"
-		health = "50"
+		health = "15"
 		mana = "1"
-		strength = "5"
+		strength = "3"
 		intellect = "1"
 		wisdom = "1"
 		consitution = "0"
@@ -181,9 +181,9 @@
 
 	<!-- Dragoon -->
 	<unit type = "Dragoon"
-		health = "100"
+		health = "50"
 		mana = "1"
-		strength = "3"
+		strength = "2"
 		intellect = "1"
 		wisdom = "1"
 		consitution = "0"
@@ -218,7 +218,7 @@
 
 	<!-- Paladin -->
 	<unit type = "Paladin"
-		  health = "100"
+		  health = "20"
 		  mana = "1"
 		  strength = "2"
 		  intellect = "1"
